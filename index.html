@@ -66,7 +66,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button primary" type="button">Замовити послугу</button>
+          <button class="button primary" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -321,42 +321,42 @@
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="list clients-list">
-            <li class="item client1">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="item client2">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-companytagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="item client3">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="item client4">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-foster"></use>
                 </svg>
               </a>
             </li>
-            <li class="item client5">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="item client6">
+            <li class="item client">
               <a class="link" href="https://www.company.com/">
                 <svg class="icon" width="106" height="60">
                   <use href="./img/symbol-defs.svg#icon-object"></use>
@@ -391,7 +391,7 @@
             </ul>
           </address>
         </div>
-        <div class="wrapper">
+        <div class="wrapper social-wrapper">
           <h3 class="title">Приєднуйтесь</h3>
           <ul class="list social-net-list">
             <li class="item">
@@ -426,14 +426,17 @@
         </div>
       </div>
     </footer>
-    <div class="modal-bgd" id="form-modal">
-      <form action="#" class="modal-form" data-netlify="true" id="form"></form>
-      <div class="modal-form-container"></div>
-      <button class="modal-window__btn-close" type="button" data-modal-close>
-        <svg class="modal-window__icon-close" width="30" height="30">
-          <use href="./img/symbol-defs.svg#icon-close-black"></use>
-        </svg>
-      </button>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="icon" width=".section.clients .client:hover," height="18">
+            <use href="./img/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
